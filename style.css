@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400&family=Oswald:wght@300&display=swap'); /*Importer des style de fonts */
+
+body{
+    padding: 1% 0% 0% 0%;/*Marge haut à 2% et bas gauche droite à 0% */
+    margin: 0;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+nav{
+    display: flex;/* Aligner les éléments de nav*/
+    flex-wrap: wrap;
+    justify-content: space-between;/* mettre une zone d'espace*/
+    align-items: center;
+    
+    position: sticky;/* coller la barre de nav */
+    top: 0;           /*en haut*/
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: white;
+}
+
+nav .profile{
+    display: flex;
+    align-items: center;
+}
+
+nav .profile img{
+    width: 40px;
+    height: 40Px;
+    border-radius: 50%;
+}
+nav .profile h1{
+    font-size: 15px;
+    margin-left: 10px;
+
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+nav ul a:hover{
+    color: grey;
+}
+nav ul li{
+    margin-left: 20px;
+    cursor: pointer; /*Changement du curseur de la souris*/
+    border-bottom: 1px solid white;
+
+}
+nav ul li:hover{/*survolement*/
+    border-bottom-color: black;
+}
+
+
+.page-content{
+    margin: 4%;
+}
+.page-content header{
+    margin-top: 5%;
+    max-width: 80%;
+}
+.page-content header h1{
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 6vw;
+}
+
+.page-content header p{
+    line-height: 30px;/*taille d'interligne*/
+    color: #818181;
+
+}
+.page-content header button{
+    background-color: inherit;/* prend la couleur d'arrière plan*/
+    border: none;
+    outline: none;/*couleur de bordure lors d'un clic*/
+    padding: 0;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #CCC;
+    cursor: pointer;
+}
+
+.page-content header button:hover{
+    color: #ccc;
+    border-bottom-color: black;
+}
+.page-content .presentation {
+    margin-top: 5%;
+}
+.page-content .presentation img{
+    max-width: 100%;
+    height: auto;    
+}
+
+
+/* MES PROJETS ACADEMIQUES*/
+
+.page-content .projets_adm{
+    margin-top: 6%;
+}
+/* .page-content.projets_adm h1{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 3vw;
+} */
+
+.page-content .projets_adm button, select{
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    border: black solid 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 1.5em;
+}
+.page-content .projets_adm button:hover{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    border: black solid 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 1.5em;
+}
+.page-content .projets_adm .projets{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:0 auto;
+    margin-right:0 auto;
+    /* justify-content: center; */
+}
+.page-content .projets_adm .proj{
+    margin-right:20px;
+    width: 250px;
+}
+.page-content .projets_adm .proj h4{
+    margin: 0;
+    color: black;
+}
+.page-content .projets_adm .proj .matière{
+    font-size: 14px;
+    color: black;
+}
+
+.page-content .proj img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 5%;
+    
+}
+
+.page-content .projets_adm .proj .description{
+    font-size: 12px;
+    color: rgb(129, 128, 128);
+    
+}
+.page-content .projets_adm .proj .date{
+    font-size: 13px;
+    color: grey;
+    font-weight: bold;
+}
+
+.page-content .projets_adm .projets a:hover{
+    filter: brightness(80%);
+}
+
+.page-content .projets_adm .projets a{
+    text-decoration: none;
+
+}
+
+img{
+    max-width: 100%;
+    height: auto; 
+}
+/* BAS DE PAGE*/
+
+
+footer {
+   margin-top: 5%;
+   display: flex;
+   flex-wrap: wrap; 
+   justify-content: space-around;/* mettre de l'espace autour dess éléments*/
+   padding: 10px;
+   background-color: black;
+   color: white;
+   
+}
+footer .colonne a{/*a enlever*/
+    text-decoration: none;
+}
+footer .colonne p{
+    font-size: 12px;
+    color: grey;
+    cursor: pointer;
+}
+
+footer .colonne p:hover{
+    color: white;
+}
+
+/* contact */
+#submit_mail{     
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+    
+}
+
+
+@media screen and (max-width: 700px) {/* quand la taille de l'écran est < à 700px*/
+    body{
+        padding: 1% 0% 0% 0%;/*Marge haut à 2% et bas gauche droite à 0% */
+        margin: 0;
+        font-family: 'Noto Sans Display', sans-serif;
+    }
+    nav{
+        justify-content: center;
+    }
+    nav ul{
+        display: none;
+    }
+    .page-content header{
+        margin-top: 10%;
+        max-width: 100%;
+    }
+
+    .page-content .projets_adm {
+        margin-top: 15%;
+    }
+    .page-content .projets_adm .h1{
+        font-size: 1.5em;
+    }
+    .page-content .projets_adm button,select{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .page-content .projets_adm button:hover,select{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .projets{
+        justify-content: center;
+    }
+    .page-content.projets_adm .proj{
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+        
+    }
+
+    .page-content.projets_adm .proj .description{
+        font-size: 13px;
+    }
+
+    footer{
+        justify-content: flex-start;/* alignement débute au début du footer*/
+    }
+    footer .colonne{
+        width: 80%;
+    }
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> <!--encodage-->
+    <meta hhtp-equiv="X-UA-Compatible" content="IE=edge"><!--fonctionner sur navigateur edge--> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--adapter en format mobile-->
+    <title>Portfolio Allan Herilus 2022</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav><!--Partie navigation-->
+        <div class="profile"><!--Partie Profil-->
+            <a href="index.html"> <img src="images/PhotoAllan1.jpg" alt="Photo de profil"></a><!--Photo de profil-->
+            <h1>Allan Herilus</h1>
+        </div>
+
+        <ul>
+            <a href="https://www.linkedin.com/in/allan-h%C3%A9rilus-5035b7238/"><li>Linkedin</li></a>
+            <a href="#projets_adm"><li>Mes projets</li></a>
+            <a target="_blank" href="HERILUS_ALLAN.pdf"><li>CV</li></a> <!--target _blank permet d'ouvrir le lien dans une nouvelle fenêtre-->
+            <a target="_blank" href="ReleveNoteBUT1.pdf"><li>Mes notes</li></a>
+            <li>Mon blog</li>
+        </ul>
+    </nav>
+
+    <section class="page-content">
+
+        <header>
+            <h1>
+                Voici mon nouveau Portfolio!
+            </h1>
+            <p>
+                Bonjour à tous et à toutes. 
+                Ce Portfolio est créer dans le but de renseigner mon parcours de BUT Informatique
+                 de la 1ère année à la dernière.
+            </p>
+            <a href="contact.html"><button>Me contacter</button></a> <!--lien vers nouvelle page contact -->
+        </header>
+
+        <section class="presentation">
+            <img src="images/palm.jpg" alt="">
+        </section>
+
+        <section class="projets_adm" id="projets_adm">
+            <h1>Projets académiques</h1>
+
+            <select name="select_matiere" id="select_matiere" >
+                <option value="">--Please choose an option--</option> <!-- Matières disponibles-->
+                <option value="SDA">SDA</option>
+                <option value="QDev">QDev</option>
+                <option value="SQL">SQL</option>
+                <option value="GPO">GPO</option>
+                <option value="Réseaux et Systèmes">Réseaux et Systèmes</option>
+                <option value="Autres">Autres</option>
+            </select>
+            <button id="tri-matiere" onclick="matiere_sort()">Trier par matière</button>
+            <button id="reset" onclick="reset()">reset</button>
+
+            <div class="projets">
+                <a href="ClassementWTA.html" class="proj">
+                    <h4>Classement joueuses de Tennis</h4>
+                    <p class="matière">QDev</p>
+                    <img src="images/ClasssementWTA.png" alt="">
+                    <p class="description">
+                        Le but de ce projet est de créer une application capable de définir un classement 
+                        des joueuses de tennis en fonction des résultats des matchs.
+                    </p>
+                    <p class="date">sept 2021</p>
+                </a>
+
+                <a href="" class="proj">
+                    <h4>Installation d'une machine virtuelle</h4>
+                    <p class="matière">Réseaux et Systèmes</p>
+                    <p class="description">
+                        SAE 1.03 Installer un poste de développement sur une machine virtuelle au choix.
+                    </p>
+                    <p class="date">décembre 2021</p>
+                </a>
+
+                <a href="" class="proj">
+                    <h4>Démineur</h4>
+                    <p class="matière">SDA</p>
+                    <img src="images/OIP.jpg" alt="">
+                    <p class="description">
+                        Le projet consiste au développement d’un jeu de démineur auquel le joueur peut interagir grâce à la
+                        console.
+                    </p>
+                    <p class="date">décembre 2021</p>
+                </a>          
+                <a href="" class="proj">
+                    <h4>Gestion de projet. SAE S2-05-06</h4>
+                    <p class="matière">GPO</p>
+                    <p class="description">
+                        Ce projet a pour but de se mettre dans la peau d'une ESN afin d'analyser les différent points de vue d'un projet.
+                    </p>
+                    <p class="date">février 2022</p>
+                </a>
+
+                <a href="" class="proj">
+                    <h4>GPO - SAE 1-05 Recueil des besoins</h4>
+                    <p class="matière">GPO</p>
+                    <img src="" alt="">
+                    <p class="description">
+                        Examiner les besoins d'une grande entreprises.
+                    </p>
+                    <p class="date">novembre 2021</p>
+                </a>
+
+                <a href="" class="proj">
+                    <h4>6 qui prend</h4>
+                    <p class="matière">SDA</p>
+                    <img src="images/6quiprend.jpg" alt="">
+                    <p class="description">
+                        Le projet consiste en la création d’un programme représentant un jeu de cartes appelé le 6-qui-prend auquel
+                        les joueurs peuvent jouer à partir de leurs interactions avec la console.
+                    </p>
+                    <p class="date">mars 2022</p>
+                </a>
+
+                <a href="" class="proj">
+                    <h4>Gestion d'une base de donnée</h4>
+                    <p class="matière">SQL</p>
+                    <img src="images/" alt="">
+                    <p class="description">
+                        Le projet consiste à gérer et analyser une base de donnée d'un supermarché. 
+                        Le but est d'analyser un grand nombre de données.
+                    </p>
+                    <p class="date">mai 2022</p>
+                </a>
+
+                <a href="" class="proj">
+                    <h4>ICY KUBE</h4>
+                    <p class="matière">GPO</p>
+                    <img src="images/" alt="">
+                    <p class="description">
+                        Définir l'économie d'une entreprise ?...
+                    </p>
+                    <p class="date">mai 2022</p>
+                </a>
+
+                <a href="" class="proj">
+                    <h4>Démineur VB</h4>
+                    <p class="matière">SDA</p>
+                    <img src="images/" alt="">
+                    <p class="description">
+                        Faire un démineur en VBA avec ne inrerface graphique homme-machine.
+                    </p>
+                    <p class="date">mai 2022</p>
+                </a>
+
+            </div>
+
+        </section>
+
+    </section>
+
+    <footer>
+       
+        <div class="colonne">
+            <h3>Mes adresses</h3>
+            <p>Herilus30@gmail.com</p>
+            <p>allan.herilus@etu.u-paris.fr</p>
+            <a href="https://www.linkedin.com/in/allan-h%C3%A9rilus-5035b7238/"><p>Linkedin</p></a>
+            
+        </div>
+    </footer>
+</body>
+
+<script>
+    const art = document.querySelectorAll('.proj'); //array de tous les proj
+    const opt_mat = document.querySelectorAll('#select_matiere option');
+
+    // for (i =0; i< opt_mat.length; i++){ //ne marche pas
+    //     opt_mat[i].addEventListener("click", matiere_sort);
+    //     // console.log("c'est fait");
+    // }        
+
+    function matiere_sort(){ //garde les articles ayant la matière choisi
+        
+        var matiere_choisi = document.getElementById('select_matiere').value;  //la matière sélectionné      
+        console.log("Classement par", matiere_choisi);      
+
+        if (matiere_choisi == ""){
+            alert("Choisissez une option valable"); //erreur en cas de mauvais choix de matière, peut-mieux être traité
+        }
+        else{
+            for (i =0; i< art.length; i++){  //Disparitions des différents
+                if (art[i].querySelector('.matière').innerText != matiere_choisi){ //valeur de la classe matière dans les articles
+                    art[i].style.display= "none"; //fait disparaitre l'article
+                }
+            }
+
+            for (i =0; i< art.length; i++){         //Affichage similaire
+                if (art[i].querySelector('.matière').innerText == matiere_choisi){
+                    art[i].style.display= "block"; //fait apparaitre l'article 
+                }                                 
+            }     
+        }            
+
+    }
+    function reset(){   //Reset le tri
+        for (i =0; i< art.length; i++){                
+                art[i].style.display= "block";                 
+        }   
+    }
+    
+
+</script>
+</html>

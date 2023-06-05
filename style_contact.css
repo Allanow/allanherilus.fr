@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400&family=Oswald:wght@300&display=swap'); /*Importer des style de fonts */
+
+body{
+    padding: 1% 0% 0% 0%;/*Marge haut à 2% et bas gauche droite à 0% */
+    margin: 0;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+nav{
+    display: flex;/* Aligner les éléments de nav*/
+    flex-wrap: wrap;
+    justify-content: space-between;/* mettre une zone d'espace*/
+    align-items: center;
+    
+    position: sticky;/* coller la barre de nav */
+    top: 0;           /*en haut*/
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: white;
+}
+
+nav .profile{
+    display: flex;
+    align-items: center;
+}
+
+nav .profile img{
+    width: 40px;
+    height: 40Px;
+    border-radius: 50%;
+}
+nav .profile h1{
+    font-size: 15px;
+    margin-left: 10px;
+
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+nav ul a:hover{
+    color: grey;
+}
+nav ul li{
+    margin-left: 20px;
+    cursor: pointer; /*Changement du curseur de la souris*/
+    border-bottom: 1px solid white;
+
+}
+nav ul li:hover{/*survolement*/
+    border-bottom-color: black;
+}
+
+
+.page-content{
+    margin: 4%;
+}
+
+
+
+/* BAS DE PAGE*/
+
+
+footer {
+   margin-top: 5%;
+   display: flex;
+   flex-wrap: wrap; 
+   justify-content: space-around;/* mettre de l'espace autour dess éléments*/
+   padding: 10px;
+   background-color: black;
+   color: white;
+   
+}
+footer .colonne a{/*a enlever*/
+    text-decoration: none;
+}
+footer .colonne p{
+    font-size: 12px;
+    color: grey;
+    cursor: pointer;
+}
+
+footer .colonne p:hover{
+    color: white;
+}
+
+/* contact */
+p{
+    color: grey;
+}
+form{
+    width: 500px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+}
+input{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#submit_mail{
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 700px) {/* quand la taille de l'écran est < à 700px*/
+    body{
+        padding: 1% 0% 0% 0%;/*Marge haut à 2% et bas gauche droite à 0% */
+        margin: 0;
+        font-family: 'Noto Sans Display', sans-serif;
+    }
+    nav{
+        justify-content: center;
+    }
+    nav ul{
+        display: none;
+    }
+
+    footer{
+        justify-content: flex-start;/* alignement débute au début du footer*/
+    }
+    footer .colonne{
+        width: 80%;
+    }
+
+    form{
+        width: 300px;
+    }
+}
